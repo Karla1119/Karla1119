@@ -93,6 +93,7 @@ footer {
 .redes-sociales{
     display: flex; 
     gap: 15px; 
+    background-color: transparent;
 }
 
 .redes-sociales a {
@@ -111,6 +112,7 @@ footer {
     font-size: 0.9rem;
     color: #efeced;
     margin-top: 10px;
+    background-color: transparent;
 }
 
 
