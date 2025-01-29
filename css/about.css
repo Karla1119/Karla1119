@@ -58,9 +58,9 @@
 
 .card h2 {
     font-size: 1.5rem;
-    color: crimson; /* Azul oscuro para los títulos */
+    color: crimson; 
     margin-bottom: 10px;
-    border-bottom: 2px solid #efeced; /* Línea decorativa */
+    border-bottom: 2px solid #efeced; 
     padding-bottom: 5px;
     background-color: transparent;
 }
