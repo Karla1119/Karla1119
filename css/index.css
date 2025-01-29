@@ -1,0 +1,153 @@
+/*PARA MÓVIL*/
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.inicio {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.inicio img {
+    width: 100%;  /* Ajuste a 100% para que la imagen no se salga del contenedor */
+    height: auto;
+    object-fit: cover;  /* Asegura que la imagen se ajuste sin distorsionarse */
+}
+
+.contenido {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    
+}
+
+.contenido h2{
+    font-size: 2rem;
+}
+
+.contenido h2 span{
+    color: crimson;
+}
+
+.contenido p{
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-top: 15px;
+}
+
+.botones {
+    display: flex;
+    gap: 20px; 
+    padding: 20px;
+}
+
+.botones a {
+    color: #fff;
+    text-decoration: none; 
+    padding: 10px 14px;
+    background: crimson;
+    border-radius: 10px;
+    border: 2px solid crimson;
+    font-weight: 150;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.botones a:hover {
+    background-color: transparent;
+    color: crimson;
+}
+
+/*PARA TABLET*/
+@media (min-width: 720px) {
+    .inicio {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 50px;
+    }
+
+    .inicio img {
+        width: 50%; 
+        height: auto;
+        object-fit: cover;
+    }
+
+    .contenido {
+        max-width: 500px;
+        text-align: left;
+        color: white;
+    }
+
+    .contenido h2 {
+        font-size: 2.5rem;
+    }
+
+    .contenido p {
+        font-size: 1.1rem;
+    }
+
+    .botones {
+        display: flex;
+        gap: 20px;
+    }
+
+    .botones a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px 18px;
+        background: crimson;
+        border-radius: 10px;
+        font-weight: 150;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+    }
+
+    .botones a:hover {
+        background-color: transparent;
+        color: crimson;
+    }
+}
+
+/*PARA ESCRITORIOS (DESKTOP)*/
+@media (min-width: 1024px) {
+    .inicio {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .inicio img {
+        width: 65%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .contenido {
+        width: 50%;
+        padding: 0 30px;
+    }
+
+    .contenido h2{
+        font-size: 3rem;
+    }
+
+    .botones a {
+        padding: 20px 18px;
+        text-align: center;
+    }
+}
