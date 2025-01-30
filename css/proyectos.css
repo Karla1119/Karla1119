@@ -1,0 +1,330 @@
+/* PARA MÓVIL */
+main {
+    background-color: #efeced;
+    min-height: 100vh;
+}
+
+.hero-panel {
+    position: relative;
+    height: 40vh;
+    min-height: 300px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.hero-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.8;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    padding: 0 1rem;
+    background-color: transparent;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+}
+
+.proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: #efeced;
+    text-align: center;
+}
+
+.pro-desc {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: crimson;
+}
+
+.container {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.container h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #1f67a8;
+    background-color: transparent;
+}
+
+.container p {
+    font-weight: lighter;
+    background-color: transparent;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.info {
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+    background-color: transparent;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    max-height: 400px;
+    height: auto;
+    margin: 10px auto;
+    overflow: hidden;
+    border: 1px solid #ffffffcc;
+    background-color: white;
+    border-radius: 13px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 16px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    background-color: transparent;
+}
+
+.proyecto {
+    min-width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.proyecto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card img {
+    background-color: transparent;
+}
+
+.btnIzquierda, .btnDerecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.btnIzquierda {
+    left: 20px;  
+}
+
+.btnDerecha {
+    right: 20px; 
+}
+
+.btnIzquierda:hover, .btnDerecha:hover {
+    background: rgba(0, 0, 0, 0.7); 
+}
+
+.card h3 {
+    color: crimson;
+    font-weight: lighter;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    background-color: transparent;
+}
+
+.card p {
+    color: #333;
+    font-weight: inherit;
+    font-size: 10px;
+    margin: 0;
+    line-height: 1.5;
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: transparent;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.certificados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.certificados .container h2 {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #1f67a8;
+}
+
+.panel {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.panel img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.panel h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.panel:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+
+/* MEDIA QUERIES */
+@media (min-width: 720px) {
+    .proyectos {
+        padding: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        flex-direction: row;
+    }
+
+    .proyecto img {
+        width: 268px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .card {
+        max-width: 450px; /* Aumenta el ancho máximo de las tarjetas */
+    }
+
+    .hero-content h2 {
+        font-size: 3rem; /* Ajusta el tamaño del texto en pantallas más grandes */
+    }
+
+    .panels{
+        padding: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        flex-direction: row;
+    }
+
+    .panel img{
+        width: 268px;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1024px) {
+    .proyectos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 30px;
+        justify-items: center; 
+        text-align: center;  
+    }
+
+    .container h2, .container p {
+        width: 100%;
+        max-width: 900px;  
+        margin: 0 auto;  
+    }
+
+    .hero-content h2 {
+        font-size: 4rem; 
+    }
+
+    .card {
+        max-width: 550px;  
+    }
+
+    .hero-content h2 {
+        font-size: 4rem; 
+    }
+
+    .panels{
+        padding: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        flex-direction: row;
+    }
+
+    .panel {
+        flex-direction: row;
+        gap: 2rem;
+        max-width: 350px; 
+    }
+
+}
+
