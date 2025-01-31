@@ -66,10 +66,11 @@ main {
     color: crimson;
 }
 
-.container {
+.proyectos .container {
     background-color: transparent;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .container h2 {
@@ -95,7 +96,7 @@ main {
 
 .card {
     position: relative;
-    width: 100%;
+    width: 90%;
     max-width: 300px;
     max-height: 400px;
     height: auto;
@@ -114,6 +115,14 @@ main {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+.card .proyecto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 13px 13px 0 0; 
+    background-color: transparent;
+}
+
 .slider-wrapper {
     position: relative;
     width: 100%;
@@ -130,12 +139,6 @@ main {
 .proyecto {
     min-width: 100%;
     transition: transform 0.5s ease;
-}
-
-.proyecto img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
 }
 
 .card img {
@@ -202,6 +205,7 @@ main {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    margin-bottom: 10%;
 }
 
 .certificados .container h2 {
@@ -217,7 +221,7 @@ main {
     position: relative;
     width: 100%;
     max-width: 300px;
-    height: 300px;
+    height: 322px;
     margin: 10px auto;
     padding: 15px;
     background-color: #fff;
@@ -231,6 +235,7 @@ main {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .panel h3 {
@@ -239,21 +244,51 @@ main {
     color: #333;
     font-weight: bold;
     background-color: transparent;
+    cursor: pointer; 
+}
+
+.panel a{
+    background-color: transparent;
+    color: crimson;
 }
 
 .panel:hover {
     transform: translateY(-10px); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  }
+    transform: scale(1.1); 
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*width: 100%;
+    height: 100%;*/
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/*.lightbox img {
+    width: auto; 
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}*/
+
+.lightbox:target {
+    display: flex; 
+}
+
 
 /* MEDIA QUERIES */
 @media (min-width: 720px) {
-    .proyectos {
-        padding: 1.5rem;
+    .proyectos, .panels {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        flex-direction: row;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .proyecto img {
@@ -263,19 +298,11 @@ main {
     }
 
     .card {
-        max-width: 450px; /* Aumenta el ancho máximo de las tarjetas */
+        max-width: 450px; 
     }
 
     .hero-content h2 {
-        font-size: 3rem; /* Ajusta el tamaño del texto en pantallas más grandes */
-    }
-
-    .panels{
-        padding: 1.5rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        flex-direction: row;
+        font-size: 3rem; 
     }
 
     .panel img{
@@ -286,18 +313,42 @@ main {
 }
 
 @media (min-width: 1024px) {
-    .proyectos {
+    .proyectos, .panels {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); 
-        gap: 30px;
-        justify-items: center; 
-        text-align: center;  
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;  
     }
 
-    .container h2, .container p {
+    .proyectos .container{
+        text-align: center; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .proyectos .container h2{
         width: 100%;
         max-width: 900px;  
-        margin: 0 auto;  
+        margin: 0 auto; 
+        text-align: center; 
+        font-size: 2rem; 
+        margin-bottom: 1.5rem; 
+    }
+
+    .container .pro-desc h3{
+        font-size: 1.5rem;
+        margin: 0 auto; 
+        text-align: center; 
+    }
+
+    .container .info{
+        width: 100%;
+        max-width: 900px;  
+        margin: 0 auto;
+        text-align: center;
     }
 
     .hero-content h2 {
@@ -310,14 +361,6 @@ main {
 
     .hero-content h2 {
         font-size: 4rem; 
-    }
-
-    .panels{
-        padding: 1.5rem;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-        flex-direction: row;
     }
 
     .panel {
