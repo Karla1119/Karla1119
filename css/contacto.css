@@ -1,0 +1,172 @@
+main {
+    background-color: #efeced;
+    min-height: 100vh;
+}
+
+/* Estilo general del formulario */
+.contacto {
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contacto h1, h2 {
+    color: crimson;
+    font-family: 'Abril Fatface',sans-serif;
+    text-align: center;
+    background-color: transparent;
+}
+
+.contacto h2{
+    margin-top: 15%;
+}
+
+.container_contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: transparent;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.info_contacto {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px; 
+    width: 90%;
+}
+
+.info_contacto i {
+    font-size: 24px;
+    color: #1f67a8;
+    background-color: transparent;
+}
+
+.datos_contacto h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+    background-color: transparent;
+    font-weight: lighter;
+}
+
+.datos_contacto span {
+    color: #666;
+    font-size: 14px;
+    background-color: transparent;
+    font-family: 'Merriweather Sans',sans-serif;
+}
+
+.info_contacto, .datos_contacto, .formularioCont, .input-control {
+    background-color: transparent; 
+}
+
+
+/* Estilo para el formulario */
+.formularioCont {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px; 
+    width: 90%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: transparent;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Merriweather Sans',sans-serif;
+}
+
+.input-control label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    background-color: transparent;
+}
+
+.input-control input, .input-control textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #ffffff; 
+    color: #333;
+    font-family: 'Merriweather Sans',sans-serif; 
+}
+
+.input-control input:focus, .input-control textarea:focus {
+    outline: none;
+    border-color: #1f67a8;
+    background-color: #ffffff; 
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.error {
+    font-size: 12px;
+    color: red;
+    margin-top: 5px;
+}
+
+.submit-button {
+    background-color: #1f67a8;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #155a87;
+}
+
+.submit-button span{
+    background-color: transparent;
+}
+
+.submit-button i {
+    font-size: 18px;
+    background-color: transparent;
+}
+
+@media(min-width: 720px){
+    .contacto h2{
+        margin-top: 10%;
+    }
+}
+
+@media(min-width: 1024px){
+    .container_contacto {
+        margin-top: 5%;
+    }
+
+    .contacto h2{
+        margin-top: 5%;
+    }
+}
